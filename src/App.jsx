@@ -8,6 +8,8 @@ import AdminLayout from './components/AdminLayout.jsx';
 import AdminDashboard from './pages/admin-dashboard/index.jsx';
 import AdminTheses from './pages/admin-theses/index.jsx';
 import AdminPeriods from './pages/admin-periods/index.jsx';
+import AdminLecturers from './pages/admin-lecturers/index.jsx';
+import AdminStudents from './pages/admin-students/index.jsx';
 import SupervisorLayout from './components/SupervisorLayout.jsx';
 import SupervisorDashboard from './pages/supervisor-dashboard/index.jsx';
 import SupervisorTheses from './pages/supervisor-theses/index.jsx';
@@ -57,6 +59,8 @@ function App() {
           <Route index element={<AdminDashboard />} />
           <Route path="theses" element={<AdminTheses />} />
           <Route path="periods" element={<AdminPeriods />} />
+          <Route path="lecturers" element={<AdminLecturers />} />
+          <Route path="students" element={<AdminStudents />} />
         </Route>
         
         {/* Supervisor Routes - Protected with role restriction */}

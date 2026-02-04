@@ -50,17 +50,39 @@ const AdminSidebar = ({ isCollapsed, onToggle }) => {
       ),
       label: 'Periods',
     },
+    // {
+    //   path: '/admin/users',
+    //   icon: (
+    //     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+    //       <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+    //       <circle cx="9" cy="7" r="4" />
+    //       <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+    //       <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+    //     </svg>
+    //   ),
+    //   label: 'Users',
+    // },
     {
-      path: '/admin/users',
+      path: '/admin/lecturers',
       icon: (
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-          <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
-          <circle cx="9" cy="7" r="4" />
-          <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
-          <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+          <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+          <path d="M6 12v5c3 3 9 3 12 0v-5" />
         </svg>
       ),
-      label: 'Users',
+      label: 'Lecturers',
+    },
+    {
+      path: '/admin/students',
+      icon: (
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+          <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+          <circle cx="9" cy="7" r="4" />
+          <path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" />
+          <polyline points="22 12 18 12 18 8" />
+        </svg>
+      ),
+      label: 'Students',
     },
     {
       path: '/admin/settings',
